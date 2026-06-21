@@ -1,0 +1,105 @@
+.mainContainer{
+    width: 100%;
+    background-color: #800020;
+    box-shadow: 0 3px 10px 0 rgba(113, 113, 113, 0.2);
+    display: flex;
+}
+
+nav{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding : 25px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    height: 35px;
+    /* background-color: black; */
+
+}
+
+.logo{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+    font-weight:bold;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.foodlogo{
+    font-size: 35px;
+    animation: bounce 2s infinite;
+    color: aliceblue;
+}
+
+.listItems{
+    display: flex;
+    gap: 30px;
+    align-self: center;
+    list-style: none;
+    font-size: 18px;
+}
+
+.listItems li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    
+}
+
+.listItems li a::after{
+    content: '';
+    position: absolute;
+    background-color: white;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    transition: 0.3s ease-in-out;
+}
+
+.listItems li a:hover::after{
+    width: 100%;
+}
+
+.listItems li a:hover{
+    color: rgb(223, 109, 28);
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.listItem li:last-child :horizontal{
+    transform : scale(1.1) rotate(10deg);
+    background-color: rgb(234, 224, 224);
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@media (max-width: 768px) {
+ nav{
+    flex-direction: column;
+    gap: 20px;
+ }
+ .listItems{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+ }
+ .logo{
+    font-size: 20px;
+ }
+}
+

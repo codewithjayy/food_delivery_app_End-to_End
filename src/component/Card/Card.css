@@ -1,0 +1,122 @@
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.card{
+    width: 300px;
+    border-radius: 10px;
+    border-color: rgb(233, 222, 214);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.Card:hover{
+    transform: translateY(-10px);
+}
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card h3{
+    margin: 10px 0;
+    color: #74b72e;
+}
+.card p{
+    color: rgb(113, 113, 113);
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+.price{
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+    .cardContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width: 90%;
+    }
+}
+.btn1, .btn2{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    /* give the gap between two buttons */
+    margin: 5px;
+    background-color: rgb(167, 63, 134);
+    color: white;
+}
+.btn1:hover, .btn2:hover{
+    background-color: #74b72e;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    margin-top:32px;
+    margin-bottom: 32px;
+
+}
+
+.searchBar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 32px;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid #c82222;    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.searchBar:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.searchBar:focus-within{
+    border-color: #74b72e;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.searchbar svg{
+    font-size: 24px;
+    color: #74b72e;
+}
+
+.searchBar input{
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 8px 0;
+    background:transparent;
+    color: #000;
+}
+
+.searchBar input::placeholder{
+    color: #1f1919;
+}
+
+
+/* give the @media */
+@media (max-width: 768px) {
+    .searchBar{
+        max-width: 90%;
+    }
+}

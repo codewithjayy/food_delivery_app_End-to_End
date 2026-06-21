@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.contact-section {
+  min-height: 100vh;
+  background: url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0")
+    center/cover no-repeat;
+  position: relative;
+  color: #fff;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.75);
+  min-height: 100vh;
+  padding: 80px 10%;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contact-header h2 {
+  font-size: 50px;
+font-family: "cursive";
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.line {
+  width: 60px;
+  height: 2px;
+  background: #74b72e;
+  margin: 0 auto 20px;
+}
+
+.contact-header h1 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.contact-header p {
+  max-width: 800px;
+  margin: auto;
+  color: #fff;
+  line-height: 1.8;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin-top: 50px;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.info-box {
+  margin-bottom: 35px;
+  
+}
+
+.info-box h4 {
+  font-size: 15px;
+  color: #fff;
+  margin-bottom: 10px;
+ 
+}
+
+.info-box p {
+  color: #fff;
+  font-size: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.social-icons span {
+  width: 40px;
+  height: 40px;
+  background: #74b72e;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 50%;
+  
+
+}
+.social-icons span:hover {
+  background: #800020;
+  color: #fff;
+}   
+
+.contact-form {
+  flex: 1;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #bbb;
+}
+
+.contact-form button {
+  background: #74b72e;
+  color: #000;
+  border: none;
+  padding: 15px 40px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.contact-form button:hover {
+  opacity: 0.9;
+   background: #800020;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}
