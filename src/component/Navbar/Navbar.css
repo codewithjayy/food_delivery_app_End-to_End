@@ -78,6 +78,37 @@ nav{
     transform : scale(1.1) rotate(10deg);
     background-color: rgb(234, 224, 224);
 }
+.cartIcon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartSvg {
+  font-size: 28px;
+}
+.cartCount {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+  background-color: #22c55e;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 11px;
+  font-weight: bold;
+
+  border: 2px solid white;
+}
 
 @keyframes bounce {
     0% {

@@ -1,9 +1,7 @@
 import React from "react";
 import "./Card.css";
 
-const Card = ({ cardData }) => {
-  console.log(cardData);
-
+const Card = ({ cardData, addToCart }) => {
   return (
     <div className="cardContainer">
       {cardData.length === 0 ? (
@@ -25,9 +23,12 @@ const Card = ({ cardData }) => {
               doloremque!
             </p>
 
-            <p className="price">Price: &#8377;{item.price}</p>
+            <p className="price">Price: ₹{item.price}</p>
 
-            <button className="btn1">Add to Cart</button>
+            <button className="btn1" onClick={() => addToCart(item)}>
+              Add to Cart
+            </button>
+
             <button className="btn2">Buy Now</button>
           </div>
         ))
